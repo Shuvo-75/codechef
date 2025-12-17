@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="nav-logo">John Doe</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-slider">
+                </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">John Doe</h1>
+                <p class="hero-tagline">Capturing Moments, Creating Memories</p>
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">My Portfolio</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="landscape">Landscape</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="street">Street</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="landscape">
+                        <!-- <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Misty mountains at sunrise"> -->
+                         <img src="/SHA_20230713_175229331_8.4.400.jpg" alt="Misty mountains at sunrise">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Woman in a flower field">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="street">
+                        <img src="https://images.pexels.com/photos/1707820/pexels-photo-1707820.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Person holding a bright umbrella on a city street">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="landscape">
+                        <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Foggy forest path">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="portrait">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smiling woman looking away">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="street">
+                        <img src="https://images.pexels.com/photos/3573382/pexels-photo-3573382.jpeg?auto=compress&cs=tinysrgb&w=600" alt="City street at night with light trails">
+                        <div class="portfolio-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <!-- <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Profile picture of John Doe" class="profile-pic"> -->
+                         <img src="/Screenshot 2025-11-07 203543.png" alt="Profile picture of John Doe" class="profile-pic">
+                    </div>
+                    <div class="about-text">
+                        <h3>Hello, I'm John Doe</h3>
+                        <p>I am a passionate photographer based in [Your City], specializing in landscape, portrait, and street photography. My journey began 10 years ago, and since then, I've been dedicated to capturing the fleeting beauty of the world around us.</p>
+                        <p>My goal is to tell stories through my lens, to freeze moments in time, and to create images that evoke emotion and inspire wonder.</p>
+                        <div class="counters">
+                            <div class="counter">
+                                <span class="counter-number" data-target="500">0</span>
+                                <span class="counter-text">Projects Done</span>
+                            </div>
+                            <div class="counter">
+                                <span class="counter-number" data-target="350">0</span>
+                                <span class="counter-text">Happy Clients</span>
+                            </div>
+                            <div class="counter">
+                                <span class="counter-number" data-target="12">0</span>
+                                <span class="counter-text">Awards Won</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Services I Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3 class="service-title">Portrait Photography</h3>
+                        <p class="service-description">Professional individual, family, and corporate headshots.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h3 class="service-title">Landscape Shoots</h3>
+                        <p class="service-description">Capturing stunning vistas and natural beauty for prints or commercial use.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h3 class="service-title">Photo Editing</h3>
+                        <p class="service-description">High-end retouching and post-processing services to make your photos shine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-slide active">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"John's work is simply breathtaking. He captured our wedding day perfectly. We couldn't be happier with the results!"</p>
+                            <h4 class="testimonial-author">- Jane & Mark S.</h4>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The corporate headshots were fantastic. Professional, quick, and exactly the style we were looking for. Highly recommend."</p>
+                            <h4 class="testimonial-author">- CEO, TechCorp</h4>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="testimonial-text">"Amazing landscape prints! The quality is top-notch, and it looks perfect in my living room."</p>
+                            <h4 class="testimonial-author">- Alex P.</h4>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next-btn" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <p class="form-status"></p>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>
+                        <p><i class="fa-solid fa-envelope"></i> johndoe@email.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                        <p><i class="fa-solid fa-location-dot"></i> 123 Photo St, New York, NY</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617478799484!2d-73.98785838459418!3d40.7484409793278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9a97f1f3d%3A0x62331c9e831d09f7!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1678888888888" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social-links">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">© 2025 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">×</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Lightbox image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Slide</title>
+    <style>
+        /* Imports a font similar to the presentation */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5; /* Light grey background to see the slide */
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            /* 16:9 Aspect Ratio */
+            width: 1280px; 
+            height: 720px;
+            
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 60px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* --- Slide Content Styles --- */
+
+        h1 {
+            /* Green from your presentation slides */
+            color: #2a6b3d; 
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+            /* Subtitle style */
+            color: #4a4a4a;
+            font-size: 32px;
+            font-weight: 300;
+            margin: 10px 0 0 0;
+        }
+
+        .presenter-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px; /* Space between members */
+            width: 100%;
+            margin-top: 80px; /* Space below title */
+        }
+
+        .member {
+            text-align: center;
+        }
+
+        /* --- This is the updated style for the member picture --- */
+        .member-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;       /* Makes it a circle */
+            object-fit: cover;        /* This crops the image to fit the circle */
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #e9ecef; /* Fallback color if image fails */
+        }
+
+        .member h3.name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+        }
+
+        .member p.id {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide">
+        
+        <h1>AI for Agriculture</h1>
+        <h2>Automated Plant Disease Detection</h2>
+
+        <div class="presenter-container">
+            
+            <div class="member">
+                <img class="member-pic" src="/crop_shuvo.jpg" alt="S.M. Rakibul Hasan Shuvo">
+                <h3 class="name">S.M. Rakibul Hasan Shuvo</h3>
+                <p class="id">ID: 2104010202307</p>
+                <p class="id">Sec : D</p>
+            </div>
+            
+            <div class="member">
+                <img class="member-pic" src="/crop_shobhan.jpg" alt="S M Golam Shobhan">
+                <h3 class="name">S M Golam Shobhan</h3>
+                <p class="id">ID: 2104010202298</p>
+                <p class="id">Sec : D</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
