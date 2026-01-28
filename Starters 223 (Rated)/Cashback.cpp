@@ -1,19 +1,21 @@
 // Problem link: https://www.codechef.com/START223D/problems/CASHBACK
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int main()
+int main() 
 {
-    int t;
-    cin >> t;
-    if(t >= 200)
+    int x;
+    if (cin >> x) 
     {
-        cout <<  t - ((t/200) * 50) << endl; 
-    }else
-    {
-        cout << t << endl; 
+        if (x >= 200) 
+        {
+            cout << x - 50 << endl;
+        } else 
+        {
+            cout << x << endl;
+        }
     }
     return 0;
 }
